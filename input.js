@@ -30,6 +30,12 @@ function handleUserInput(stdin){
     if (key === 's'){
       connection.write("Move: down");
     }
+    if (key === 'i'){
+      connection.write("Say: Iwin");
+    }
+    if (key === 'u'){
+      connection.write("Say: lose");
+    }
   })
 }
 module.exports = {setupInput};
